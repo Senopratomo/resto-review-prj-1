@@ -55,6 +55,18 @@
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG5hos7jM1PqIXv94ISC5zh3fPPeMXoGg&libraries=places&callback=initMap"></script>
+  <script>
+      if('serviceWorker' in navigator) {
+          console.log('Service worker is supported.');
+          navigator.serviceWorker
+              .register('/sw.js')
+              .then(() =>{ console.log("Service Worker Registered"); })
+              .catch(error => { console.log(`Service Worker Registration failed with ${error}`)});
+      } else {
+          console.log('Service worker is NOT supported.');
+      }
+
+  </script>
 </body>
 
 </html>
