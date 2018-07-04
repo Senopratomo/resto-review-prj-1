@@ -9,7 +9,7 @@ To run serve this page via your local web server, follow the below steps:
 4) Open file {$folder_from_step2}/resto-review-prj-1/js/dbhelper.js
 5) Go to line 11 and change the port in the following variable to the port that your local webserver will be running from
 Eg: "const port = 3000" // means you'll be running your local server at port 3000
-4) run your local server on the newly created folder "resto-review-prj-1" on the port specified in step 5
-5) Open your browser and type the following in your browser address bar (replace {port_number_from_step_5} with the port number from step 5):
+6) run your local server on the newly created folder "resto-review-prj-1" on the port specified in step 5
+7) Open your browser and type the following in your browser address bar (replace {port_number_from_step_5} with the port number from step 5):
 http://localhost:{port_number_from_step_5}/
-6) Enjoy and feedback is welcome!
+8) Enjoy and feedback is welcome!
